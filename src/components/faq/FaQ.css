@@ -1,0 +1,40 @@
+.faq-section .accordion-item {
+    border: 0;
+}
+
+.faq-section .accordion-button {
+    font-size: 22px;
+    font-weight: 600;
+    /* border-radius: 100px; */
+}
+
+.faq-section .accordion-item:first-of-type .accordion-button {
+    border-radius: 100px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    border-radius: 100px;
+    box-shadow: none;
+    color: #13547a;
+}
+
+.faq-section .accordion-body {
+    color: #717275;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.accordion-collapse {
+    overflow: hidden;
+    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .accordion-body {
+    padding: 1rem;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .accordion-collapse.show .accordion-body {
+    opacity: 1;
+  }
