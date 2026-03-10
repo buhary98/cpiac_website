@@ -10,11 +10,15 @@ const HeroBanner = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-12 mx-auto">
-            <h1 className="text-white text-center">Discover. Learn. Enjoy</h1>
-            <h6 className="text-center">
-              Platform for creatives around the world
+            <h1 className="text-white text-center">
+              Dispute. Decide. Deliver.
+            </h1>
+            <h6 className="text-center padding-side">
+              We manage your disputes, provide decisions, {" "}
+              {/* <br /> */}
+              and deliver resolutions that&nbsp;work.
             </h6>
-            <form
+            {/* <form
               method="get"
               className="custom-form mt-4 pt-2 mb-lg-0 mb-5"
               role="search"
@@ -36,7 +40,7 @@ const HeroBanner = () => {
                   Search
                 </button>
               </div>
-            </form>
+            </form> */}
           </div>
         </div>
       </div>

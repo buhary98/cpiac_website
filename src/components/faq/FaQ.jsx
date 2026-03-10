@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import FaQImg from "../../assets/images/faq_graphic.jpg";
+import FaQImg from "../../assets/images/faq.png";
 
 import "./FaQ.css";
 
@@ -48,7 +48,7 @@ const FaQ = () => {
                     aria-expanded={activeIndex === 1}
                     aria-controls="collapseOne"
                   >
-                    What is Topic Listing?
+                    What is arbitration?
                   </button>
                 </h2>
                 <div
@@ -60,13 +60,10 @@ const FaQ = () => {
                   aria-labelledby="headingOne"
                 >
                   <div className="accordion-body">
-                    Topic Listing is free Bootstrap 5 CSS template.{" "}
-                    <strong>
-                      You are not allowed to redistribute this template
-                    </strong>{" "}
-                    on any other template collection website without our
-                    permission. Please contact TemplateMo for more detail. Thank
-                    you.
+                    Arbitration is a form of alternative dispute resolution
+                    where two or more parties agree to resolve their disputes
+                    outside of court. An independent arbitrator or panel of
+                    arbitrators hears both sides and makes a binding decision.
                   </div>
                 </div>
               </div>
@@ -81,7 +78,7 @@ const FaQ = () => {
                     aria-expanded={activeIndex === 2}
                     aria-controls="collapseTwo"
                   >
-                    How to find a topic?
+                    How does arbitration differ from court litigation?
                   </button>
                 </h2>
                 <div
@@ -93,9 +90,10 @@ const FaQ = () => {
                   aria-labelledby="headingTwo"
                 >
                   <div className="accordion-body">
-                    You can search on Google with <strong>keywords</strong> such
-                    as templatemo portfolio, templatemo one-page layouts,
-                    photography, digital marketing, etc.
+                    Arbitration is usually faster, more flexible, and less
+                    formal than court litigation. Unlike court, the arbitration
+                    process is private, and the decision, known as an award, is
+                    final and binding with limited grounds for appeal.
                   </div>
                 </div>
               </div>
@@ -110,7 +108,7 @@ const FaQ = () => {
                     aria-expanded={activeIndex === 3}
                     aria-controls="collapseThree"
                   >
-                    Does it need to be paid?
+                    How are arbitrators chosen?
                   </button>
                 </h2>
                 <div
@@ -122,10 +120,70 @@ const FaQ = () => {
                   aria-labelledby="headingThree"
                 >
                   <div className="accordion-body">
-                    You can modify any of this with custom CSS or overriding our
-                    default variables. It's also worth noting that just about
-                    any HTML can go within the <code>.accordion-body</code>,
-                    though the transition does limit overflow.
+                    Arbitrators are typically chosen by agreement between the
+                    parties involved, based on their expertise and impartiality.
+                    Some arbitration institutions maintain a list of qualified
+                    arbitrators from which parties can choose.
+                  </div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingFour">
+                  <button
+                    className={`accordion-button ${
+                      activeIndex === 4 ? "" : "collapsed"
+                    }`}
+                    type="button"
+                    onClick={() => toggleAccordion(4)}
+                    aria-expanded={activeIndex === 4}
+                    aria-controls="collapseFour"
+                  >
+                    What are the costs of arbitration?
+                  </button>
+                </h2>
+                <div
+                  ref={(el) => (contentRef.current[3] = el)}
+                  id="collapseFour"
+                  className={`accordion-collapse collapse ${
+                    activeIndex === 4 ? "show" : ""
+                  }`}
+                  aria-labelledby="headingFour"
+                >
+                  <div className="accordion-body">
+                    The cost of arbitration includes arbitrators' fees,
+                    administrative fees, and sometimes legal fees. While it can
+                    be less expensive than litigation, costs vary depending on
+                    the arbitrator and the complexity of the case.
+                  </div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingFive">
+                  <button
+                    className={`accordion-button ${
+                      activeIndex === 5 ? "" : "collapsed"
+                    }`}
+                    type="button"
+                    onClick={() => toggleAccordion(5)}
+                    aria-expanded={activeIndex === 5}
+                    aria-controls="collapseFive"
+                  >
+                    Is arbitration confidential?
+                  </button>
+                </h2>
+                <div
+                  ref={(el) => (contentRef.current[4] = el)}
+                  id="collapseFive"
+                  className={`accordion-collapse collapse ${
+                    activeIndex === 5 ? "show" : ""
+                  }`}
+                  aria-labelledby="headingFive"
+                >
+                  <div className="accordion-body">
+                    Yes, arbitration is typically a private process. Unlike
+                    court cases, arbitration hearings are not open to the
+                    public, and the details of the dispute and decision are
+                    usually kept confidential.
                   </div>
                 </div>
               </div>

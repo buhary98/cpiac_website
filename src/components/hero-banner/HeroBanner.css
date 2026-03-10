@@ -75,3 +75,19 @@ a {
     color: #ffffff;
     max-width: 150px;
 }
+
+.padding-side {
+    padding: 0px 150px;
+}
+
+@media screen and (max-width: 991px) {
+    .padding-side {
+        padding: 0px 135px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .padding-side {
+        padding: 0px 25px;
+    }
+}

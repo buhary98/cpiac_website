@@ -33,6 +33,7 @@ h2 {
 
 h3 {
   font-size: 32px !important;
+  font-weight: 700 !important;
 }
 
 h4 {
@@ -180,6 +181,51 @@ strong {
   color: #ffffff;
 }
 
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.popup-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  max-width: 1000px;
+  width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.popup-inner {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 48px !important;
@@ -295,4 +341,23 @@ strong {
   .social-share {
     display: none !important;
   }
+
+  .explore-container-text p {
+    padding: 0px !important;
+  }
+
+  .popup-content {
+    padding: 0px !important;
+    border-radius: 30px !important;
+  }
+
+  .popup-content .container {
+    padding: 0px !important;
+  }
+
+  .close-button {
+    z-index: 4 !important;
+  }
+
+
 }

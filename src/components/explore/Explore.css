@@ -40,6 +40,7 @@
     padding: 30px;
     transition: all 0.3s ease;
     height: 100%;
+    cursor: pointer;
 }
 
 .custom-block:hover {
@@ -62,28 +63,4 @@
     width: 30px;
     height: 30px;
     line-height: 20px;
-}
-
-.bg-design {
-    background-color: #00B0FF;
-}
-
-.bg-graphic {
-    background-color: #00BFA6;
-}
-
-.bg-marketing {
-    background-color: #F50057;
-}
-
-.bg-finance {
-    background-color: #536DFE;
-}
-
-.bg-music {
-    background-color: #F9A826;
-}
-
-.bg-education {
-    background-color: #00BFA6;
 }

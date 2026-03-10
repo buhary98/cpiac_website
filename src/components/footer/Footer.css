@@ -15,6 +15,13 @@
   margin-left: 10px;
 }
 
+.copyright-text {
+    font-size: 16px;
+    margin: 0px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
 .site-footer::after {
     content: "";
     position: absolute;
@@ -28,7 +35,7 @@
     pointer-events: none;
 }
 
-.site-footer-title {
+/* .site-footer-title {
     color: #13547a;
 }
 
@@ -81,8 +88,4 @@
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
-}
-
-.copyright-text {
-    font-size: 16px;
-}
+} */

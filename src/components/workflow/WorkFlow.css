@@ -1,0 +1,202 @@
+.workflow-section {
+    background-image: url('../../assets/images/workflow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.workflow-container .vertical-scrollable-workflow {
+    list-style-type: none;
+    position: relative;
+    padding-left: 0;
+}
+
+.workflow-container .vertical-scrollable-workflow li {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+
+.workflow-container .vertical-scrollable-workflow li:last-child {
+    padding-bottom: 0;
+}
+
+.workflow-container .vertical-scrollable-workflow li .cont {
+    margin-left: 30px;
+}
+
+.workflow-container .vertical-scrollable-workflow li p {
+    line-height: 40px;
+}
+
+.workflow-container .vertical-scrollable-workflow li p:last-child {
+    margin-bottom: 0;
+}
+
+.workflow-container .vertical-scrollable-workflow li .icon-holder {
+    left: 0;
+    top: 0;
+    width: 230px;
+    height: 95px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #80d0c7;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.4s all;
+}
+
+.workflow-container .vertical-scrollable-workflow li .icon-holder::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 4px solid #fff;
+    position: absolute;
+    background-color: #80d0c7;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.4s all;
+}
+
+.workflow-container .vertical-scrollable-workflow li .icon-holder i {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.workflow-container .vertical-scrollable-workflow li::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    background-color: transparent;
+    left: 52px;
+    z-index: 0;
+}
+
+.workflow-container .vertical-scrollable-workflow li.active .icon-holder {
+    background-color: #13547a;
+}
+
+.workflow-container .vertical-scrollable-workflow li.active .icon-holder::before {
+    background-color: #13547a;
+}
+
+.workflow-popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.workflow-content {
+    padding: 50px;
+    text-align: center;
+    border-radius: 45px;
+    position: relative;
+    z-index: 3;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.workflow-content h3 {
+    margin-bottom: 30px;
+    color: #ffffff !important;
+}
+
+.workflow-content div {
+    margin-bottom: 35px;
+}
+
+.workflow-content div h4 {
+    text-align: left !important;
+    margin-bottom: 15px !important;
+    color: #ffffff !important;
+}
+
+.workflow-content div h6 {
+    text-align: left !important;
+    margin-bottom: 5px !important;
+    color: #ffffff !important;
+}
+
+.workflow-content p {
+    margin: 0px 0px 15px 0px !important;
+    font-size: 16px;
+    text-align: justify;
+    color: #ffffff !important;
+}
+
+@media screen and (max-width: 991px) {
+
+    .workflow-container .vertical-scrollable-workflow li {
+        flex-direction: column;
+        padding-left: 30px;
+        align-items: center;
+    }
+
+    .workflow-container .vertical-scrollable-workflow li .icon-holder {
+        width: 100px;
+        height: 100px;
+    }
+
+    .workflow-container .vertical-scrollable-workflow li .cont {
+        margin-top: 30px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .workflow-content {
+        padding: 30px;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .workflow-container .vertical-scrollable-workflow li p {
+        line-height: 30px !important;
+    }
+
+    .learn-mroe-btn {
+        flex-direction: column;
+    }
+
+    .workflow-section .popup-backdrop .popup-content {
+        padding: 0px !important;
+        border-radius: 30px !important;
+    }
+
+    .workflow-section .popup-backdrop .popup-content .close-button {
+        z-index: 4 !important;
+    }
+
+    .workflow-section .popup-backdrop .popup-content .container {
+        padding: 0px !important;
+    }
+
+    .workflow-content {
+        padding: 35px 15px 0px 15px !important;
+    }
+
+    .workflow-content div h4 {
+        text-align: center !important;
+    }
+
+    .workflow-content div h6 {
+        text-align: center !important;
+    }
+
+    .workflow-content div p {
+        text-align: center !important;
+    }
+}
