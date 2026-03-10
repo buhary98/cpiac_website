@@ -52,7 +52,7 @@ const Feature = () => {
     };
   }, [popupContent]);
 
-  if (loading) return <div>Loading...</div>;
+  /* if (loading) return <div>Loading...</div>; */
   if (error) return <div>Error fetching news: {error.message}</div>;
 
   const aboutPopupVariant = {
